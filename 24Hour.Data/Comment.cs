@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace _24Hour.Data
 {
-    internal class Comment
+    public class Comment
     {
+        public int CommentId { get; set; }
     }
 }
