@@ -1,0 +1,16 @@
+C:\1150CDrive\24Hour\24Hour.Models\bin\Debug\24Hour.Models.dll.config
+C:\1150CDrive\24Hour\24Hour.Models\bin\Debug\24Hour.Models.dll
+C:\1150CDrive\24Hour\24Hour.Models\bin\Debug\24Hour.Models.pdb
+C:\1150CDrive\24Hour\24Hour.Models\bin\Debug\EntityFramework.dll
+C:\1150CDrive\24Hour\24Hour.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\1150CDrive\24Hour\24Hour.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\1150CDrive\24Hour\24Hour.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\1150CDrive\24Hour\24Hour.Models\bin\Debug\EntityFramework.xml
+C:\1150CDrive\24Hour\24Hour.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\1150CDrive\24Hour\24Hour.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\1150CDrive\24Hour\24Hour.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\1150CDrive\24Hour\24Hour.Models\obj\Debug\24Hour.Models.csproj.AssemblyReference.cache
+C:\1150CDrive\24Hour\24Hour.Models\obj\Debug\24Hour.Models.csproj.CoreCompileInputs.cache
+C:\1150CDrive\24Hour\24Hour.Models\obj\Debug\24Hour.Models.csproj.CopyComplete
+C:\1150CDrive\24Hour\24Hour.Models\obj\Debug\24Hour.Models.dll
+C:\1150CDrive\24Hour\24Hour.Models\obj\Debug\24Hour.Models.pdb
