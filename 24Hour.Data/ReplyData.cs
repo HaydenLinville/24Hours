@@ -8,17 +8,20 @@ using System.Threading.Tasks;
 
 namespace _24Hour.Data
 {
-    public class Comment
+    public class ReplyData
     {
         [Key]
-        public int CommentId { get; set; }
+        public int ReplyId { get; set; }
+
         [Required]
-        public string CommentText { get; set; }
+        public string Text { get; set; }
+
         [Required]
         public Guid OwnerId { get; set; }
-        [ForeignKey(nameof(PostId))]
-        public int PostId { get; set; }
-        public virtual List<ReplyData> Replies { get; set; } = new List<ReplyData>();
+
+        [ForeignKey(nameof(Comment))]
+        public int CommentId { get; set; }
+        public virtual Comment Comment { get; set; }
 
     }
 }
