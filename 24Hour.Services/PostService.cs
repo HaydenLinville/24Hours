@@ -37,7 +37,7 @@ namespace _24Hour.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var query = ctx.Posts.Where(e => e.OwnerId == _userId).Select(e => new PostListItem { PostId = e.NoteId, Title = e.Title });
+                var query = ctx.Posts.Where(e => e.OwnerId == _userId).Select(e => new PostListItem { PostId = e.PostId, Title = e.Title });
                 return query.ToArray();
             }
         }

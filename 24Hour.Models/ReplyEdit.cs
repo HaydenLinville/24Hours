@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace _24Hour.Models
 {
-    internal class ReplyEdit
+    public class ReplyEdit
     {
+        [Display(Name = "Reply ID")]
+        public int ReplyId { get; set; }
+        [Display(Name = "Reply Text")]
+        public string ReplyText { get; set; }
     }
 }
