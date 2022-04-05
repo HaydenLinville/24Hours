@@ -33,3 +33,5 @@ C:\1150CDrive\24Hour\24Hour.Data\obj\Debug\24Hour.Data.csproj.CoreCompileInputs.
 C:\1150CDrive\24Hour\24Hour.Data\obj\Debug\24Hour.Data.csproj.CopyComplete
 C:\1150CDrive\24Hour\24Hour.Data\obj\Debug\24Hour.Data.dll
 C:\1150CDrive\24Hour\24Hour.Data\obj\Debug\24Hour.Data.pdb
+C:\Users\tomal\Desktop\GroupAssignment\24Hour.Data\obj\Debug\24Hour.Data.csproj.AssemblyReference.cache
+C:\Users\tomal\Desktop\GroupAssignment\24Hour.Data\obj\Debug\24Hour.Data.csproj.CoreCompileInputs.cache

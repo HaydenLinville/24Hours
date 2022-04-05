@@ -14,3 +14,5 @@ C:\1150CDrive\24Hour\24Hour.Models\obj\Debug\24Hour.Models.csproj.CoreCompileInp
 C:\1150CDrive\24Hour\24Hour.Models\obj\Debug\24Hour.Models.csproj.CopyComplete
 C:\1150CDrive\24Hour\24Hour.Models\obj\Debug\24Hour.Models.dll
 C:\1150CDrive\24Hour\24Hour.Models\obj\Debug\24Hour.Models.pdb
+C:\Users\tomal\Desktop\GroupAssignment\24Hour.Models\obj\Debug\24Hour.Models.csproj.AssemblyReference.cache
+C:\Users\tomal\Desktop\GroupAssignment\24Hour.Models\obj\Debug\24Hour.Models.csproj.CoreCompileInputs.cache
