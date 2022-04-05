@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace _24Hour.Models
 {
-    public class CommentCreate
+    public class ReplyCreate
     {
-        public int CommentId { get; set; }
+        public int ReplyId { get; set; }
         [MaxLength(1000, ErrorMessage = "There are too many characters in this field. (Max 15")]
         [Required]
-        public string CommentText { get; set; }
-        public override string ToString() => CommentText;
-        public int PostId { get; set; }
-        public string PostTitle { get; set; }
+        public string ReplyText { get; set; }
+        public override string ToString() => ReplyText;
+        public int CommentId { get; set; }
+        public string CommentTitle { get; set; }
     }
 }
