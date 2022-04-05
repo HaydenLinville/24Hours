@@ -21,7 +21,11 @@ namespace _24Hour.Data
 
         [ForeignKey(nameof(Comment))]
         public int CommentId { get; set; }
+<<<<<<< HEAD
         public virtual Comment Comment { get; set; }
+=======
+        public virtual CommentData Comment { get; set; }
+>>>>>>> 849139a2069d0eef14786a5fc24223de27740e20
 
     }
 }
