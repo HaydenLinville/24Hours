@@ -30,3 +30,9 @@ C:\Users\tomal\Desktop\GroupAssignment\24Hour.Services\obj\Debug\24Hour.Services
 C:\Users\tomal\Desktop\GroupAssignment\24Hour.Services\obj\Debug\24Hour.Services.csproj.CopyComplete
 C:\Users\tomal\Desktop\GroupAssignment\24Hour.Services\obj\Debug\24Hour.Services.dll
 C:\Users\tomal\Desktop\GroupAssignment\24Hour.Services\obj\Debug\24Hour.Services.pdb
+C:\Users\tomal\Desktop\GroupAssignment\24Hour.Services\bin\Debug\24Hour.Data.dll
+C:\Users\tomal\Desktop\GroupAssignment\24Hour.Services\bin\Debug\24Hour.Models.dll
+C:\Users\tomal\Desktop\GroupAssignment\24Hour.Services\bin\Debug\24Hour.Data.pdb
+C:\Users\tomal\Desktop\GroupAssignment\24Hour.Services\bin\Debug\24Hour.Data.dll.config
+C:\Users\tomal\Desktop\GroupAssignment\24Hour.Services\bin\Debug\24Hour.Models.pdb
+C:\Users\tomal\Desktop\GroupAssignment\24Hour.Services\bin\Debug\24Hour.Models.dll.config

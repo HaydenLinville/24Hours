@@ -8,91 +8,91 @@ using _24Hour.Models;
 
 namespace _24Hour.Services
 {
-    public class CommentService
+    public class ReplyService
     {
         private readonly Guid _ownerId;
 
-        public CommentService(Guid ownerId)
+        public ReplyService(Guid ownerId)
         {
             _ownerId = ownerId;
         }
-         public bool CreateComment(CommentCreate model)
+        public bool CreateReply(ReplyCreate model)
         {
             var entity =
-                new Comment()
+                new ReplyData()
                 {
-                    CommentId = model.CommentId,
-                    CommentText = model.CommentText,
-                    PostId = model.PostId
+                    ReplyId = model.ReplyId,
+                    Text = model.ReplyText,
+                    CommentId = model.CommentId
                 };
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Comments.Add(entity);
+                ctx.Replies.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
 
-        public IEnumerable<CommentListItem> GetComments()
+        public IEnumerable<ReplyListItem> GetReplies()
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var query =
                     ctx
-                    .Comments
+                    .Replies
                     .Select(
                         e =>
-                        new CommentListItem
+                        new ReplyListItem
                         {
-                            CommentId = e.CommentId,
-                            CommentText = e.CommentText
+                            ReplyId = e.ReplyId,
+                            ReplyText = e.Text
                         });
                 return query.ToArray();
             }
         }
 
-        public CommentDetail GetCommentById(int commentID)
+        public ReplyDetail GetReplyById(int replyID)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
-                    .Comments
-                    .Single(e => e.CommentId == commentID);
+                    .Replies
+                    .Single(e => e.ReplyId == replyID);
                 return
-                    new CommentDetail
+                    new ReplyDetail
                     {
-                        CommentId = entity.CommentId,
-                        CommentText = entity.CommentText
+                        ReplyId = entity.ReplyId,
+                        ReplyText = entity.Text
                     };
             }
         }
 
-        public bool UpdateComment(CommentEdit model)
+        public bool UpdateReply(ReplyEdit model)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
-                    .Comments
-                    .Single(e => e.CommentId == model.CommentId);
+                    .Replies
+                    .Single(e => e.ReplyId == model.ReplyId);
 
-                entity.CommentText = model.CommentText;
+                entity.Text = model.ReplyText;
 
                 return ctx.SaveChanges() == 1;
 
             }
         }
 
-        public bool DeleteReply(int commentID)
+        public bool DeleteReply(int replyID)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
-                    .Comments
-                    .Single(e => e.CommentId == commentID);
+                    .Replies
+                    .Single(e => e.ReplyId == replyID);
 
-                ctx.Comments.Remove(entity);
+                ctx.Replies.Remove(entity);
 
                 return ctx.SaveChanges() == 1;
             }
