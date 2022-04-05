@@ -1,24 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _24Hour.Data
+namespace _24Hour.Models
 {
-    public class Comment
+    public class CommentCreate
     {
-        [Key]
         public int CommentId { get; set; }
+        [MaxLength(1000, ErrorMessage = "There are too many charcters int this field. (Max 15")]
         [Required]
         public string CommentText { get; set; }
-        [Required]
-        public Guid OwnerId { get; set; }
-        [ForeignKey(nameof(PostId))]
+        public override string ToString() => CommentText;
         public int PostId { get; set; }
-        public virtual List<Replies> Replies { get; set; } = new List<Replies>();
-
+        public string PostTitle { get; set; }
     }
 }
