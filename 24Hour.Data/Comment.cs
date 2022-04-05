@@ -18,7 +18,7 @@ namespace _24Hour.Data
         public Guid OwnerId { get; set; }
         [ForeignKey(nameof(PostId))]
         public int PostId { get; set; }
-        public virtual List<Replies> Replies { get; set; } = new List<Replies>();
+        public virtual List<ReplyData> Replies { get; set; } = new List<ReplyData>();
 
     }
 }
